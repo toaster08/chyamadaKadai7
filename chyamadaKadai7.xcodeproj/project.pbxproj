@@ -58,6 +58,7 @@
 		8A9CF78626A62E6D004D942D /* chyamadaKadai7 */ = {
 			isa = PBXGroup;
 			children = (
+				8A9CF7A126A842F5004D942D /* Extention */,
 				8A9CF78726A62E6D004D942D /* AppDelegate.swift */,
 				8A9CF78926A62E6D004D942D /* SceneDelegate.swift */,
 				8A9CF78B26A62E6D004D942D /* PinkViewController.swift */,
@@ -68,6 +69,13 @@
 				8A9CF79526A62E71004D942D /* Info.plist */,
 			);
 			path = chyamadaKadai7;
+			sourceTree = "<group>";
+		};
+		8A9CF7A126A842F5004D942D /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extention;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -9,7 +9,6 @@ import UIKit
 
 final class PinkViewController: UIViewController {
 
-    
     @IBOutlet private weak var firstTextField: UITextField!
     @IBOutlet private weak var secondTextField: UITextField!
     @IBOutlet private weak var additionButton: UIButton!
@@ -35,8 +34,10 @@ final class PinkViewController: UIViewController {
     @objc private func didTapView(){
         view.endEditing(true)
     }
-    
-    @objc private func add(firstNumber:UITextField,secondNumber:UITextField){
+}
+
+extension PinkViewController {
+    @objc private func add() {
         
         guard let firstNumber = Int(firstTextField.text!),
               let secondNumber = Int(secondTextField.text!) else {
@@ -50,4 +51,3 @@ final class PinkViewController: UIViewController {
         secondTextField.resignFirstResponder()
     }
 }
-
