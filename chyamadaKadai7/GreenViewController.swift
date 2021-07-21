@@ -34,8 +34,10 @@ final class GreenViewController: UIViewController {
     @objc private func didTapView(){
         view.endEditing(true)
     }
-    
-    @objc private func subtract(firstNumber:UITextField,secondNumber:UITextField){
+}
+
+extension GreenViewController {
+    @objc private func subtract(){
         
         guard let firstNumber = Int(firstTextField.text!),
               let secondNumber = Int(secondTextField.text!) else {
