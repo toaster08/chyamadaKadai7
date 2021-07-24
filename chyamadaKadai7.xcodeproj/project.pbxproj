@@ -9,23 +9,37 @@
 /* Begin PBXBuildFile section */
 		8A9CF78826A62E6D004D942D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CF78726A62E6D004D942D /* AppDelegate.swift */; };
 		8A9CF78A26A62E6D004D942D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CF78926A62E6D004D942D /* SceneDelegate.swift */; };
-		8A9CF78C26A62E6D004D942D /* PinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CF78B26A62E6D004D942D /* PinkViewController.swift */; };
 		8A9CF78F26A62E6D004D942D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A9CF78D26A62E6D004D942D /* Main.storyboard */; };
 		8A9CF79126A62E71004D942D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A9CF79026A62E71004D942D /* Assets.xcassets */; };
 		8A9CF79426A62E71004D942D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A9CF79226A62E71004D942D /* LaunchScreen.storyboard */; };
-		8A9CF79D26A62F83004D942D /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CF79C26A62F83004D942D /* GreenViewController.swift */; };
+		8A9CF7A326A8B1AA004D942D /* CalclationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CF7A226A8B1AA004D942D /* CalclationModel.swift */; };
+		8A9CF7BE26A90E51004D942D /* AdditionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CF7BD26A90E51004D942D /* AdditionView.swift */; };
+		8A9CF7C126A90E5D004D942D /* AdditionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A9CF7C026A90E5D004D942D /* AdditionView.xib */; };
+		8A9CF7C626A91025004D942D /* SubtractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CF7C526A91025004D942D /* SubtractionView.swift */; };
+		8A9CF7C926A91031004D942D /* SubtractionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A9CF7C826A91030004D942D /* SubtractionView.xib */; };
+		8A9CF7D026A92DE1004D942D /* AdditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CF7CF26A92DE1004D942D /* AdditionViewController.swift */; };
+		8A9CF7DB26A96044004D942D /* SubtractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CF7DA26A96044004D942D /* SubtractionViewController.swift */; };
+		DEDE974ECCEB0C872820F639 /* Pods_chyamadaKadai7.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641904C2A2E6358AD147270E /* Pods_chyamadaKadai7.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B1359F89E14BF55BCC50AC9 /* Pods-chyamadaKadai7.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chyamadaKadai7.release.xcconfig"; path = "Target Support Files/Pods-chyamadaKadai7/Pods-chyamadaKadai7.release.xcconfig"; sourceTree = "<group>"; };
+		61E110E387953F2FCE89CA2E /* Pods-chyamadaKadai7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chyamadaKadai7.debug.xcconfig"; path = "Target Support Files/Pods-chyamadaKadai7/Pods-chyamadaKadai7.debug.xcconfig"; sourceTree = "<group>"; };
+		641904C2A2E6358AD147270E /* Pods_chyamadaKadai7.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chyamadaKadai7.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9CF78426A62E6D004D942D /* chyamadaKadai7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chyamadaKadai7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9CF78726A62E6D004D942D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A9CF78926A62E6D004D942D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8A9CF78B26A62E6D004D942D /* PinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkViewController.swift; sourceTree = "<group>"; };
 		8A9CF78E26A62E6D004D942D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A9CF79026A62E71004D942D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A9CF79326A62E71004D942D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A9CF79526A62E71004D942D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A9CF79C26A62F83004D942D /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		8A9CF7A226A8B1AA004D942D /* CalclationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalclationModel.swift; sourceTree = "<group>"; };
+		8A9CF7BD26A90E51004D942D /* AdditionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionView.swift; sourceTree = "<group>"; };
+		8A9CF7C026A90E5D004D942D /* AdditionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdditionView.xib; sourceTree = "<group>"; };
+		8A9CF7C526A91025004D942D /* SubtractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionView.swift; sourceTree = "<group>"; };
+		8A9CF7C826A91030004D942D /* SubtractionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubtractionView.xib; sourceTree = "<group>"; };
+		8A9CF7CF26A92DE1004D942D /* AdditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionViewController.swift; sourceTree = "<group>"; };
+		8A9CF7DA26A96044004D942D /* SubtractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEDE974ECCEB0C872820F639 /* Pods_chyamadaKadai7.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		056B8ACCA33F28FBB4AB58E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				641904C2A2E6358AD147270E /* Pods_chyamadaKadai7.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		077097842D0A5B3429A44B57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61E110E387953F2FCE89CA2E /* Pods-chyamadaKadai7.debug.xcconfig */,
+				3B1359F89E14BF55BCC50AC9 /* Pods-chyamadaKadai7.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8A9CF77B26A62E6D004D942D = {
 			isa = PBXGroup;
 			children = (
 				8A9CF78626A62E6D004D942D /* chyamadaKadai7 */,
 				8A9CF78526A62E6D004D942D /* Products */,
+				077097842D0A5B3429A44B57 /* Pods */,
+				056B8ACCA33F28FBB4AB58E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,12 +92,12 @@
 		8A9CF78626A62E6D004D942D /* chyamadaKadai7 */ = {
 			isa = PBXGroup;
 			children = (
-				8A9CF7A126A842F5004D942D /* Extention */,
+				8A9CF7B126A8F8B2004D942D /* View */,
+				8AC04BC126ABB87600D1AFEF /* ViewController */,
+				8A9CF7A626A8E86D004D942D /* Model */,
+				8A9CF78D26A62E6D004D942D /* Main.storyboard */,
 				8A9CF78726A62E6D004D942D /* AppDelegate.swift */,
 				8A9CF78926A62E6D004D942D /* SceneDelegate.swift */,
-				8A9CF78B26A62E6D004D942D /* PinkViewController.swift */,
-				8A9CF79C26A62F83004D942D /* GreenViewController.swift */,
-				8A9CF78D26A62E6D004D942D /* Main.storyboard */,
 				8A9CF79026A62E71004D942D /* Assets.xcassets */,
 				8A9CF79226A62E71004D942D /* LaunchScreen.storyboard */,
 				8A9CF79526A62E71004D942D /* Info.plist */,
@@ -71,11 +105,64 @@
 			path = chyamadaKadai7;
 			sourceTree = "<group>";
 		};
-		8A9CF7A126A842F5004D942D /* Extention */ = {
+		8A9CF7A626A8E86D004D942D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8A9CF7A226A8B1AA004D942D /* CalclationModel.swift */,
 			);
-			path = Extention;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A9CF7B126A8F8B2004D942D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A9CF7D426A95B40004D942D /* AddtionView */,
+				8A9CF7D526A95B53004D942D /* SubtractionView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A9CF7D426A95B40004D942D /* AddtionView */ = {
+			isa = PBXGroup;
+			children = (
+				8A9CF7BD26A90E51004D942D /* AdditionView.swift */,
+				8A9CF7C026A90E5D004D942D /* AdditionView.xib */,
+			);
+			path = AddtionView;
+			sourceTree = "<group>";
+		};
+		8A9CF7D526A95B53004D942D /* SubtractionView */ = {
+			isa = PBXGroup;
+			children = (
+				8A9CF7C526A91025004D942D /* SubtractionView.swift */,
+				8A9CF7C826A91030004D942D /* SubtractionView.xib */,
+			);
+			path = SubtractionView;
+			sourceTree = "<group>";
+		};
+		8AC04BC126ABB87600D1AFEF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8AC04BCF26ABF26B00D1AFEF /* AdditionViewController */,
+				8AC04BD226ABF2E200D1AFEF /* SubtractionViewController */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8AC04BCF26ABF26B00D1AFEF /* AdditionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8A9CF7CF26A92DE1004D942D /* AdditionViewController.swift */,
+			);
+			path = AdditionViewController;
+			sourceTree = "<group>";
+		};
+		8AC04BD226ABF2E200D1AFEF /* SubtractionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8A9CF7DA26A96044004D942D /* SubtractionViewController.swift */,
+			);
+			path = SubtractionViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A9CF79826A62E71004D942D /* Build configuration list for PBXNativeTarget "chyamadaKadai7" */;
 			buildPhases = (
+				32D052FDC816E9508FEA860F /* [CP] Check Pods Manifest.lock */,
 				8A9CF78026A62E6D004D942D /* Sources */,
 				8A9CF78126A62E6D004D942D /* Frameworks */,
 				8A9CF78226A62E6D004D942D /* Resources */,
+				8AC04BDA26ABFC3D00D1AFEF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -135,22 +224,69 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A9CF7C126A90E5D004D942D /* AdditionView.xib in Resources */,
 				8A9CF79426A62E71004D942D /* LaunchScreen.storyboard in Resources */,
 				8A9CF79126A62E71004D942D /* Assets.xcassets in Resources */,
 				8A9CF78F26A62E6D004D942D /* Main.storyboard in Resources */,
+				8A9CF7C926A91031004D942D /* SubtractionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32D052FDC816E9508FEA860F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chyamadaKadai7-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AC04BDA26ABFC3D00D1AFEF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n    swiftlint autocorrect --format\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A9CF78026A62E6D004D942D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A9CF79D26A62F83004D942D /* GreenViewController.swift in Sources */,
-				8A9CF78C26A62E6D004D942D /* PinkViewController.swift in Sources */,
+				8A9CF7A326A8B1AA004D942D /* CalclationModel.swift in Sources */,
 				8A9CF78826A62E6D004D942D /* AppDelegate.swift in Sources */,
+				8A9CF7BE26A90E51004D942D /* AdditionView.swift in Sources */,
+				8A9CF7C626A91025004D942D /* SubtractionView.swift in Sources */,
+				8A9CF7D026A92DE1004D942D /* AdditionViewController.swift in Sources */,
+				8A9CF7DB26A96044004D942D /* SubtractionViewController.swift in Sources */,
 				8A9CF78A26A62E6D004D942D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +431,7 @@
 		};
 		8A9CF79926A62E71004D942D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61E110E387953F2FCE89CA2E /* Pods-chyamadaKadai7.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,6 +450,7 @@
 		};
 		8A9CF79A26A62E71004D942D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B1359F89E14BF55BCC50AC9 /* Pods-chyamadaKadai7.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
