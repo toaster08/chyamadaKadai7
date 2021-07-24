@@ -8,7 +8,6 @@
 import UIKit
 
 final class SubtractionViewController: UIViewController {
-    
     private var subtractionView: SubtractionView!
 
     override func viewDidLoad() {
