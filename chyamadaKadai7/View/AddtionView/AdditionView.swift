@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol ViewDelegate: AnyObject {
-    func didTappedButton(firstTextField: UITextField, secondTextField: UITextField) -> String
-}
-
 final class AdditionView: UIView {
     weak var delegate: ViewDelegate?
 
