@@ -8,6 +8,7 @@
 import UIKit
 
 final class AdditionViewController: UIViewController {
+    
     private var additionView: AdditionView!
 
     override func viewDidLoad() {
@@ -25,9 +26,7 @@ extension AdditionViewController: ViewDelegate {
             return ""
         }
 
-        let addResult = CalculationModel().apply(firstNumber: firstNumber,
-                                                 secondNumber: secondNumber,
-                                                 calc: {$0 + $1})
+        let addResult = Calculation().apply(firstNumber, secondNumber) { $0 + $1 }
         return String(describing: addResult)
     }
 }

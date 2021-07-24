@@ -12,13 +12,14 @@
 		8A9CF78F26A62E6D004D942D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A9CF78D26A62E6D004D942D /* Main.storyboard */; };
 		8A9CF79126A62E71004D942D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A9CF79026A62E71004D942D /* Assets.xcassets */; };
 		8A9CF79426A62E71004D942D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A9CF79226A62E71004D942D /* LaunchScreen.storyboard */; };
-		8A9CF7A326A8B1AA004D942D /* CalclationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CF7A226A8B1AA004D942D /* CalclationModel.swift */; };
 		8A9CF7BE26A90E51004D942D /* AdditionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CF7BD26A90E51004D942D /* AdditionView.swift */; };
 		8A9CF7C126A90E5D004D942D /* AdditionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A9CF7C026A90E5D004D942D /* AdditionView.xib */; };
 		8A9CF7C626A91025004D942D /* SubtractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CF7C526A91025004D942D /* SubtractionView.swift */; };
 		8A9CF7C926A91031004D942D /* SubtractionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A9CF7C826A91030004D942D /* SubtractionView.xib */; };
 		8A9CF7D026A92DE1004D942D /* AdditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CF7CF26A92DE1004D942D /* AdditionViewController.swift */; };
 		8A9CF7DB26A96044004D942D /* SubtractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CF7DA26A96044004D942D /* SubtractionViewController.swift */; };
+		8AC12D3326AC4CD0009D24A2 /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC12D3226AC4CD0009D24A2 /* Calculation.swift */; };
+		8AC12D3926AC4DD8009D24A2 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC12D3826AC4DD8009D24A2 /* Protocol.swift */; };
 		DEDE974ECCEB0C872820F639 /* Pods_chyamadaKadai7.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641904C2A2E6358AD147270E /* Pods_chyamadaKadai7.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,13 +34,14 @@
 		8A9CF79026A62E71004D942D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A9CF79326A62E71004D942D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A9CF79526A62E71004D942D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A9CF7A226A8B1AA004D942D /* CalclationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalclationModel.swift; sourceTree = "<group>"; };
 		8A9CF7BD26A90E51004D942D /* AdditionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionView.swift; sourceTree = "<group>"; };
 		8A9CF7C026A90E5D004D942D /* AdditionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdditionView.xib; sourceTree = "<group>"; };
 		8A9CF7C526A91025004D942D /* SubtractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionView.swift; sourceTree = "<group>"; };
 		8A9CF7C826A91030004D942D /* SubtractionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubtractionView.xib; sourceTree = "<group>"; };
 		8A9CF7CF26A92DE1004D942D /* AdditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionViewController.swift; sourceTree = "<group>"; };
 		8A9CF7DA26A96044004D942D /* SubtractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionViewController.swift; sourceTree = "<group>"; };
+		8AC12D3226AC4CD0009D24A2 /* Calculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
+		8AC12D3826AC4DD8009D24A2 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,9 +94,10 @@
 		8A9CF78626A62E6D004D942D /* chyamadaKadai7 */ = {
 			isa = PBXGroup;
 			children = (
+				8AC12D3726AC4DB9009D24A2 /* Protocol */,
 				8A9CF7B126A8F8B2004D942D /* View */,
 				8AC04BC126ABB87600D1AFEF /* ViewController */,
-				8A9CF7A626A8E86D004D942D /* Model */,
+				8AC12D3C26AC4E37009D24A2 /* Model */,
 				8A9CF78D26A62E6D004D942D /* Main.storyboard */,
 				8A9CF78726A62E6D004D942D /* AppDelegate.swift */,
 				8A9CF78926A62E6D004D942D /* SceneDelegate.swift */,
@@ -103,14 +106,6 @@
 				8A9CF79526A62E71004D942D /* Info.plist */,
 			);
 			path = chyamadaKadai7;
-			sourceTree = "<group>";
-		};
-		8A9CF7A626A8E86D004D942D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				8A9CF7A226A8B1AA004D942D /* CalclationModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		8A9CF7B126A8F8B2004D942D /* View */ = {
@@ -163,6 +158,22 @@
 				8A9CF7DA26A96044004D942D /* SubtractionViewController.swift */,
 			);
 			path = SubtractionViewController;
+			sourceTree = "<group>";
+		};
+		8AC12D3726AC4DB9009D24A2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8AC12D3826AC4DD8009D24A2 /* Protocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		8AC12D3C26AC4E37009D24A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8AC12D3226AC4CD0009D24A2 /* Calculation.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,9 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A9CF7A326A8B1AA004D942D /* CalclationModel.swift in Sources */,
 				8A9CF78826A62E6D004D942D /* AppDelegate.swift in Sources */,
 				8A9CF7BE26A90E51004D942D /* AdditionView.swift in Sources */,
+				8AC12D3326AC4CD0009D24A2 /* Calculation.swift in Sources */,
+				8AC12D3926AC4DD8009D24A2 /* Protocol.swift in Sources */,
 				8A9CF7C626A91025004D942D /* SubtractionView.swift in Sources */,
 				8A9CF7D026A92DE1004D942D /* AdditionViewController.swift in Sources */,
 				8A9CF7DB26A96044004D942D /* SubtractionViewController.swift in Sources */,
