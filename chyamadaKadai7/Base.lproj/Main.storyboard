@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,138 +18,50 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1iU-ES-9fh"/>
-                        <segue destination="uTM-95-twa" kind="relationship" relationship="viewControllers" id="w8e-bw-xIo"/>
+                        <segue destination="mS6-yA-ciU" kind="relationship" relationship="viewControllers" id="v5e-Gp-8al"/>
+                        <segue destination="Ugs-yh-WYF" kind="relationship" relationship="viewControllers" id="14U-Wb-RpB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uKz-aH-ucv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-886" y="-258"/>
+            <point key="canvasLocation" x="-2168" y="-250"/>
         </scene>
         <!--Item-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="iaE-ZX-l3g">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="PinkViewController" customModule="chyamadaKadai7" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="mS6-yA-ciU" customClass="AdditionViewController" customModule="chyamadaKadai7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HkR-Un-KL3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="hwR-xI-aNJ" userLabel="TextField Stack View">
-                                <rect key="frame" x="100" y="109" width="214" height="106"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="crv-HD-awE">
-                                        <rect key="frame" x="0.0" y="0.0" width="214" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tQx-9V-Chx" userLabel="Second Text Field">
-                                        <rect key="frame" x="0.0" y="72" width="214" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="jBk-7t-XK8"/>
-                                </constraints>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQe-oO-IZe">
-                                <rect key="frame" x="171" y="255" width="72" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlL-pm-4bF">
-                                <rect key="frame" x="177.5" y="337" width="59" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.90865236520000003" green="0.65715885159999998" blue="0.75328010320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="gQe-oO-IZe" firstAttribute="top" secondItem="hwR-xI-aNJ" secondAttribute="bottom" constant="40" id="4i4-Ew-dpG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hwR-xI-aNJ" secondAttribute="trailing" constant="100" id="KPa-Jc-dYT"/>
-                            <constraint firstItem="hlL-pm-4bF" firstAttribute="top" secondItem="gQe-oO-IZe" secondAttribute="bottom" constant="40" id="LYf-vR-3mx"/>
-                            <constraint firstItem="hwR-xI-aNJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="QEn-sn-EOT"/>
-                            <constraint firstItem="gQe-oO-IZe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YhG-f8-neO"/>
-                            <constraint firstItem="hwR-xI-aNJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="f6q-jr-KDn"/>
-                            <constraint firstItem="hlL-pm-4bF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pXq-vs-c2y"/>
-                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZyI-lV-Ze4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="R61-zW-C5i"/>
-                    <connections>
-                        <outlet property="additionButton" destination="gQe-oO-IZe" id="FS9-WT-pkX"/>
-                        <outlet property="firstTextField" destination="crv-HD-awE" id="Nwm-Hg-t7h"/>
-                        <outlet property="secondTextField" destination="tQx-9V-Chx" id="axE-Ou-GWI"/>
-                        <outlet property="totalLabel" destination="hlL-pm-4bF" id="RPI-lE-WlC"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Item" id="9jT-je-vZL"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WmU-m2-nFy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-116" y="-437"/>
+            <point key="canvasLocation" x="-591" y="-491"/>
         </scene>
         <!--Item-->
-        <scene sceneID="Xrn-PX-EiL">
+        <scene sceneID="K4u-JS-18x">
             <objects>
-                <viewController id="uTM-95-twa" customClass="GreenViewController" customModule="chyamadaKadai7" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jiG-we-hi3">
+                <viewController id="Ugs-yh-WYF" customClass="SubtractionViewController" customModule="chyamadaKadai7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HXj-ig-vl9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="ae6-pc-cVM" userLabel="TextField Stack View">
-                                <rect key="frame" x="100" y="109" width="214" height="106"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3NM-K2-rmF">
-                                        <rect key="frame" x="0.0" y="0.0" width="214" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="thu-ex-n3r">
-                                        <rect key="frame" x="0.0" y="72" width="214" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="qfY-RF-cdx"/>
-                                </constraints>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMz-rP-wHH">
-                                <rect key="frame" x="171" y="255" width="72" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRB-Go-8oK">
-                                <rect key="frame" x="177.5" y="337" width="59" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="KTU-Gv-Nac"/>
-                        <color key="backgroundColor" red="0.48789617419999998" green="0.79089498520000001" blue="0.62790101769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="KMz-rP-wHH" firstAttribute="top" secondItem="ae6-pc-cVM" secondAttribute="bottom" constant="40" id="29i-2W-cD5"/>
-                            <constraint firstItem="ae6-pc-cVM" firstAttribute="centerX" secondItem="jiG-we-hi3" secondAttribute="centerX" id="4au-8G-UeN"/>
-                            <constraint firstItem="PRB-Go-8oK" firstAttribute="centerX" secondItem="jiG-we-hi3" secondAttribute="centerX" id="4tA-nH-ek2"/>
-                            <constraint firstItem="KMz-rP-wHH" firstAttribute="centerX" secondItem="jiG-we-hi3" secondAttribute="centerX" id="GGw-fc-CWU"/>
-                            <constraint firstItem="ae6-pc-cVM" firstAttribute="leading" secondItem="KTU-Gv-Nac" secondAttribute="leading" constant="100" id="KAD-KC-aTH"/>
-                            <constraint firstItem="KTU-Gv-Nac" firstAttribute="trailing" secondItem="ae6-pc-cVM" secondAttribute="trailing" constant="100" id="WIR-nW-JCW"/>
-                            <constraint firstItem="PRB-Go-8oK" firstAttribute="top" secondItem="KMz-rP-wHH" secondAttribute="bottom" constant="40" id="gMx-Uk-XQd"/>
-                            <constraint firstItem="ae6-pc-cVM" firstAttribute="top" secondItem="KTU-Gv-Nac" secondAttribute="top" constant="65" id="yQh-h9-k3N"/>
-                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jj3-rD-eZL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="cC5-hc-pVC"/>
-                    <connections>
-                        <outlet property="firstTextField" destination="3NM-K2-rmF" id="lxr-tE-Mtb"/>
-                        <outlet property="secondTextField" destination="thu-ex-n3r" id="u2g-mG-cHQ"/>
-                        <outlet property="subtractionButton" destination="KMz-rP-wHH" id="9xK-I9-nmm"/>
-                        <outlet property="totalLabel" destination="PRB-Go-8oK" id="gF3-G6-aI4"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Item" id="drr-K1-x5y"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DcX-pu-TWY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fhx-EV-9uv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-116" y="241"/>
+            <point key="canvasLocation" x="-591" y="222"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

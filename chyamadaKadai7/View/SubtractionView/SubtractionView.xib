@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubtractionView" customModule="chyamadaKadai7" customModuleProvider="target">
+            <connections>
+                <outlet property="firstTextField" destination="Wov-4r-q3w" id="Osj-3W-CUj"/>
+                <outlet property="resultLabel" destination="b2K-Wz-A0p" id="FMG-SS-io7"/>
+                <outlet property="secondTextField" destination="hup-mW-9mB" id="7Pj-r7-vfI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wov-4r-q3w" userLabel="First Text Field">
+                    <rect key="frame" x="100" y="94" width="214" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="bVa-nx-t11"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hup-mW-9mB" userLabel="Second Text Field">
+                    <rect key="frame" x="100" y="178" width="214" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYP-2s-108" userLabel="SubstructionButton">
+                    <rect key="frame" x="171" y="262" width="72" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="subtractionButton:" destination="-1" eventType="touchUpInside" id="Maa-4d-k8j"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2K-Wz-A0p" userLabel="ResultLabel">
+                    <rect key="frame" x="177.5" y="354" width="59" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.48789617419999998" green="0.79089498520000001" blue="0.62790101769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hup-mW-9mB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Wov-4r-q3w" secondAttribute="bottom" constant="10" id="4R9-br-k23"/>
+                <constraint firstItem="b2K-Wz-A0p" firstAttribute="top" secondItem="kYP-2s-108" secondAttribute="bottom" priority="750" constant="50" id="6wG-8w-YKz"/>
+                <constraint firstItem="Wov-4r-q3w" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" priority="750" constant="50" id="8Wd-Xd-d8h"/>
+                <constraint firstItem="hup-mW-9mB" firstAttribute="trailing" secondItem="Wov-4r-q3w" secondAttribute="trailing" id="Ahv-ye-hCz"/>
+                <constraint firstItem="Wov-4r-q3w" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Dup-2n-Zds"/>
+                <constraint firstItem="hup-mW-9mB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EOf-8Z-P5A"/>
+                <constraint firstItem="Wov-4r-q3w" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="Nct-KV-AaR"/>
+                <constraint firstItem="kYP-2s-108" firstAttribute="top" secondItem="hup-mW-9mB" secondAttribute="bottom" priority="750" constant="50" id="SPU-ep-uX9"/>
+                <constraint firstItem="kYP-2s-108" firstAttribute="top" relation="greaterThanOrEqual" secondItem="hup-mW-9mB" secondAttribute="bottom" constant="10" id="b8j-jX-RP7"/>
+                <constraint firstItem="b2K-Wz-A0p" firstAttribute="top" relation="greaterThanOrEqual" secondItem="kYP-2s-108" secondAttribute="bottom" constant="10" id="cUb-Ui-Se2"/>
+                <constraint firstItem="kYP-2s-108" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cUz-YL-Qle"/>
+                <constraint firstItem="Wov-4r-q3w" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" priority="750" constant="100" id="fUF-YW-lPL"/>
+                <constraint firstItem="hup-mW-9mB" firstAttribute="leading" secondItem="Wov-4r-q3w" secondAttribute="leading" id="fj2-wT-zUt"/>
+                <constraint firstItem="b2K-Wz-A0p" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jA4-iz-9Jy"/>
+                <constraint firstItem="hup-mW-9mB" firstAttribute="top" secondItem="Wov-4r-q3w" secondAttribute="bottom" priority="750" constant="50" id="w3o-3E-TQO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Wov-4r-q3w" secondAttribute="trailing" priority="750" constant="100" id="ygW-zP-sI7"/>
+            </constraints>
+            <point key="canvasLocation" x="-696" y="-599"/>
+        </view>
+    </objects>
+</document>
