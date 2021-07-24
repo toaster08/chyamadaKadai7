@@ -39,6 +39,7 @@ final class SubtractionView: UIView {
     }
 
     @IBAction private func subtractionButton(_ sender: Any) {
+        print("GreenViewTapped")
         resultLabel.text = self.delegate?.didTappedButton(firstTextField: firstTextField,
                                                           secondTextField: secondTextField)
 

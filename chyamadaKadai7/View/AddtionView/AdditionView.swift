@@ -39,7 +39,7 @@ final class AdditionView: UIView {
     }
 
     @IBAction private func additionButton(_ sender: Any) {
-        print("Tapped")
+        print("PinkViewTapped")
         resultLabel.text = self.delegate?.didTappedButton(firstTextField: firstTextField,
                                                           secondTextField: secondTextField)
         firstTextField.resignFirstResponder()

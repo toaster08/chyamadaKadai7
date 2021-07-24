@@ -8,7 +8,6 @@
 import UIKit
 
 final class AdditionViewController: UIViewController {
-    
     private var additionView: AdditionView!
 
     override func viewDidLoad() {
