@@ -8,7 +8,7 @@
 import UIKit
 
 final class AdditionView: UIView {
-    weak var delegate: ViewDelegate?
+    weak var delegate: CalculationViewDelegate?
 
     @IBOutlet private weak var firstTextField: UITextField! {
         didSet { firstTextField.keyboardType = .numberPad }
@@ -39,10 +39,13 @@ final class AdditionView: UIView {
     }
 
     @IBAction private func additionButton(_ sender: Any) {
-        print("PinkViewTapped")
-        resultLabel.text = self.delegate?.didTappedButton(firstTextField: firstTextField,
-                                                          secondTextField: secondTextField)
+        self.delegate?.didTappedButton(firstText: firstTextField.text ?? "",
+                                       secondText: secondTextField.text ?? "")
         firstTextField.resignFirstResponder()
         secondTextField.resignFirstResponder()
+    }
+
+    func configure(result: String) {
+        resultLabel.text = result
     }
 }
