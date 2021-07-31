@@ -8,7 +8,7 @@
 import UIKit
 
 final class SubtractionView: UIView {
-    weak var delegate: ViewDelegate?
+    weak var delegate: CalculationViewDelegate?
 
     @IBOutlet private weak var firstTextField: UITextField! {
         didSet { firstTextField.keyboardType = .numberPad }
@@ -39,11 +39,13 @@ final class SubtractionView: UIView {
     }
 
     @IBAction private func subtractionButton(_ sender: Any) {
-        print("GreenViewTapped")
-        resultLabel.text = self.delegate?.didTappedButton(firstTextField: firstTextField,
-                                                          secondTextField: secondTextField)
-
+        self.delegate?.didTappedButton(firstText: firstTextField.text ?? "",
+                                       secondText: secondTextField.text ?? "")
         firstTextField.resignFirstResponder()
         secondTextField.resignFirstResponder()
+    }
+
+    func configure(result: String) {
+        resultLabel.text = result
     }
 }

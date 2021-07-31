@@ -18,14 +18,15 @@ final class AdditionViewController: UIViewController {
     }
 }
 
-extension AdditionViewController: ViewDelegate {
-    func didTappedButton(firstTextField: UITextField, secondTextField: UITextField) -> String {
-        guard let firstNumber = Int(firstTextField.text ?? ""),
-              let secondNumber = Int(secondTextField.text ?? "") else {
-            return ""
+extension AdditionViewController: CalculationViewDelegate {
+    func didTappedButton(firstText: String, secondText: String) {
+        guard let firstNumber = Int(firstText),
+              let secondNumber = Int(secondText) else {
+            additionView.configure(result: "")
+            return
         }
 
         let addResult = Calculation().apply(firstNumber, secondNumber) { $0 + $1 }
-        return String(describing: addResult)
+        additionView.configure(result: String(describing: addResult))
     }
 }

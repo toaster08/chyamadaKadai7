@@ -18,14 +18,15 @@ final class SubtractionViewController: UIViewController {
     }
 }
 
-extension SubtractionViewController: ViewDelegate {
-    func didTappedButton(firstTextField: UITextField, secondTextField: UITextField) -> String {
-        guard let firstNumber = Int(firstTextField.text ?? ""),
-              let secondNumber = Int(secondTextField.text ?? "") else {
-            return ""
+extension SubtractionViewController: CalculationViewDelegate {
+    func didTappedButton(firstText: String, secondText: String) {
+        guard let firstNumber = Int(firstText),
+              let secondNumber = Int(secondText) else {
+            subtractionView.configure(result: "")
+            return
         }
 
         let subtractResult = Calculation().apply(firstNumber, secondNumber) { $0 - $1 }
-        return String(describing: subtractResult)
+        subtractionView.configure(result: String(describing: subtractResult))
     }
 }
