@@ -7,6 +7,6 @@
 
 import UIKit
 
-protocol ViewDelegate: AnyObject {
-    func didTappedButton(firstTextField: UITextField, secondTextField: UITextField) -> String
+protocol CalculationViewDelegate: AnyObject {
+    func didTappedButton(firstText: String, secondText: String)
 }
